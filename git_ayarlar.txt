@@ -1,2 +1,3 @@
 git config --global rebase.autoStash true
 git pull
+eğer bu commitlenirse takla atarım
