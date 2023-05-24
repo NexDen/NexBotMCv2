@@ -16,6 +16,7 @@ const { handle_message } = require("./handle_messages");
 
 var {handle_member_add, handle_member_leave} = require("./handle_member")
 
+// test yorumu.
 
 const {execute: aktif_execute} = require("./fonksiyonlar/aktif.js")
 const {execute: bakim_execute} = require("./fonksiyonlar/bakim.js")
