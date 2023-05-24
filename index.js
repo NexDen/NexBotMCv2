@@ -7,15 +7,6 @@ const path = require("node:path")
 
 const readline = require("readline")
 
-//// repl.it açık tutma
-// const {http} = require("http")
-// const express = require("express")
-// const app = express()    
-// app.get("/", (request, response) => {
-//     console.log(Date.now() + " Ping tamamdır.")
-//     response.sendStatus(200)
-// })
-
 var debug = false;
 
 
