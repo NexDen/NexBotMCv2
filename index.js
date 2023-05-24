@@ -1,11 +1,6 @@
 var { token } = require("./config.json")
 var { Discord, Client, Collection, GatewayIntentBits ,Intents, MessageActionRow, MessageButton, MessageSelectMenu, MessageEmbed } = require("discord.js")
-const sha1 = require("sha1")
 var Colors = require("./colors.js")
-
-if (sha1(token) === "3249b559bb55eab95002dae1cb723d19a80cc3fe"){ // hehe bunu ters çevirmeye çalışın
-    console.log(`${Colors.BgRed}${Colors.Bright}${Colors.FgWhite}[DİKKAT] TEST TOKENİ İLE ÇALIŞTIRILIYOR [DİKKAT]${Colors.Reset}`)
-}
 
 const fs = require("node:fs")
 const path = require("node:path")
