@@ -1,7 +1,6 @@
 const { EmbedBuilder, SlashCommandBuilder } = require("discord.js")
 const client = global.client;
-const {server_ip} = require("../config.json")
-const { embed_footer, embed_gif, embed_color } = require("../embeds.json")
+const { embed_footer, embed_gif, embed_color, server_ip } = require("../embeds.json")
 
 async function aktif(interaction){
     if (!interaction.member.permissions.has("ADMINISTRATOR")) 

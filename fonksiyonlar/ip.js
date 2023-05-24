@@ -1,17 +1,19 @@
 var { Discord, Client,SlashCommandBuilder ,Collection, GatewayIntentBits ,Intents, MessageActionRow, MessageButton, MessageSelectMenu, MessageEmbed, EmbedBuilder } = require("discord.js")
 
-var { server_ip } = require("../config.json")
+const { embed_footer, embed_gif, embed_color, server_ip } = require("../embeds.json")
 
 async function ip(interaction){
     var embed = new EmbedBuilder()
                 .addFields(
                     {
-                        name: "IP",
+                        name: "SUNUCU IP'Sİ",
                         value: server_ip,
                         inline: true
                     },
                 )
-                .setImage("https://cdn.discordapp.com/attachments/959490900520742972/1109915680830148679/standard_1.gif")
+                .setImage(embed_gif)
+                .setFooter({text:embed_footer})
+
     await interaction.reply({embeds: [embed]})
 }
 
