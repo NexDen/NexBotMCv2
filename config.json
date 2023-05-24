@@ -1,5 +1,5 @@
 {
-  "token":"",
-  "clientId":"1109917058092769454",
-  "server_ip":"91.198.66.22:27029"
+  "token":"token of the bot",
+  "clientId":"client id of bot",
+  "server_ip":"ip of the server"
 }
