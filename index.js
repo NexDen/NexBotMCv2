@@ -14,7 +14,7 @@ var { komut_log , düzenle_log } = require("./log_messages.js")
 
 const { handle_message } = require("./handle_messages");
 
-var {handle_member_add} = require("./handle_member")
+var {handle_member_add, handle_member_leave} = require("./handle_member")
 
 
 const {execute: aktif_execute} = require("./fonksiyonlar/aktif.js")
