@@ -1,6 +1,7 @@
 const { EmbedBuilder, SlashCommandBuilder } = require("discord.js")
 const client = global.client;
 const {server_ip} = require("../config.json")
+const { embed_footer, embed_gif, embed_color } = require("../embeds.json")
 
 async function aktif(interaction){
     if (!interaction.member.permissions.has("ADMINISTRATOR")) 
@@ -9,7 +10,7 @@ async function aktif(interaction){
             setTitle("İşlem Başarısız")
             .setDescription(`Bu komutu kullanabilmek için gerekli yetkiye sahip değilsin.`)
             .setColor("#1f1e33")
-            .setFooter({text:"Raies"})
+            .setFooter({text:embed_footer})
         return interaction.reply(
             {
                 embeds: [embed],
@@ -21,13 +22,13 @@ async function aktif(interaction){
     }
     var embed = new EmbedBuilder()
     .setTitle('SUNUCU AKTİF')
-    .setColor("#1f1e33")
+    .setColor(embed_color)
     .addFields({
         name:"Sunucu IP'si",
         value: server_ip
     })
-    .setImage(`https://cdn.discordapp.com/attachments/959490900520742972/1109915680830148679/standard_1.gif`)
-    .setFooter({text:"Raies"})
+    .setImage(embed_gif)
+    .setFooter({text:embed_footer})
     interaction.channel.send({
         embeds : [embed],
     })
