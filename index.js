@@ -23,6 +23,8 @@ const {execute: bakim_execute} = require("./fonksiyonlar/bakim.js")
 
 // zort
 
+// abdü
+
 var client = new Client({
     intents: [
 		GatewayIntentBits.Guilds,
